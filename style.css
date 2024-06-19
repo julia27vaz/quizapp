@@ -10,13 +10,14 @@
     --primary-text-color: #313e51;
     --secondery-text-color: #626c7f;
     --purple: #a729f5;
-    --bg-button: #fff;
+    --white: #fff;
     --shadow: 0px 16px 40px 0px rgba(143, 168, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
     --bg-js: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
+    --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
 }
 
 body{
@@ -88,17 +89,15 @@ main{
 }
 
 .assuntos{
-    border: 1px red solid;
-
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .assuntos button{
-    
+
     border: none;
-    background-color: var(--bg-button);
+    background-color: var(--white);
     display: flex;
     align-items: center;
     gap: 16px;
@@ -135,4 +134,56 @@ main{
 
 .buttonAcessibilidade div{
     background: var(--bg-acessibilidade);
+}
+
+
+
+@media(min-width: 1100px){
+    body{
+        background: var(--bg-desktop) var(--bg-color);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    
+    header{
+        margin-block: 81px;
+    }
+
+    
+    main{
+        display: flex;
+        max-width: 1160px;
+        margin-inline: auto;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .BoasVindas h1{
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+
+    .BoasVindas p{
+        font-size: 20px;
+    }
+
+  
+    .assuntos{
+        gap: 24px;
+    }
+
+    .assuntos button{
+        font-size: 28px;
+        padding: 20px;
+        gap: 32px;
+    }
+
+    .assuntos button div{
+        width: 56px;
+        height: 56px;
+        padding: 8px;
+    }
 }
