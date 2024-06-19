@@ -12,6 +12,8 @@
     --purple: #a729f5;
     --bg-button: #fff;
     --white: #fff;
+    --green: #26d782;
+    --red: #ee5454;
     --shadow: 0px 16px 40px 0px rgba(143, 168, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
@@ -153,7 +155,12 @@ main{
 }
 
 .alternativas label:has(input:checked){
+  outline: 3px solid var(--purple);
 
+    & span{
+        background: var(--purple);
+        color: var(--white);
+    }
 }
 
 .alternativas input{
