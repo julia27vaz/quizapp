@@ -7,6 +7,8 @@
 
 :root{
     --bg-color: #f4f6fa;
+    --bg-span: #f4f6fa;
+    --color-span: #626c7f
     --primary-text-color: #313e51;
     --secondery-text-color: #626c7f;
     --purple: #a729f5;
@@ -26,6 +28,7 @@
 
 body.dark{
     --bg-color: #313e51;
+     --color-span: #313e51;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
     --primary-text-color: #fff;
@@ -204,9 +207,9 @@ main{
     display: block;
     width: 40px;
     height: 40px;
-    background: var(--bg-color);
+    background: var(--bg-span);
     border-radius: 5px;
-    color: var(--secondery-text-color);
+    color: var(--color-span);
 
     display: flex;
     flex-shrink: 0;
