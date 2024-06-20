@@ -65,6 +65,22 @@ header{
     border-radius: 5px;
 }
 
+.assuntoIcone.html{
+    background: var(--bg-html);
+}
+
+.assuntoIcone.css{
+    background: var(--bg-css);
+}
+
+.assuntoIcone.javascript{
+    background: var(--bg-js);
+}
+
+.assuntoIcone.acessibilidade{
+    background: var(--bg-acessibilidade);
+}
+
 .assuntoIcone img{
     width: 100%;
 }
